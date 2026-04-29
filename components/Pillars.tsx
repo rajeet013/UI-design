@@ -19,8 +19,8 @@ export default function Pillars() {
     },
   ];
   return (
-    <div className="p-4 space-y-3 ">
-      <p className="font-bold text-xl">Pillars of &quot;Bangladesh 2.0&quot;</p>
+    <div className="p-4 space-y-3 lg:space-y-8">
+      <p className="font-bold text-xl xl:text-4xl">Pillars of &quot;Bangladesh 2.0&quot;</p>
       <div className="flex flex-col gap-4 md:flex md:flex-row">
         {pillars.map((item) => (
           <div key={item.title} className="bg-white rounded-2xl p-7">

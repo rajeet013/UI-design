@@ -20,21 +20,21 @@ const opinion = [
 
 export default function Opinion() {
   return (
-    <div className="p-4 space-y-4 w-full ">
-      <p className="font-bold text-xl p-3">Your Opinion Matters</p>
-      <div className="p-10 bg-white rounded-2xl ">
-        <table className="w-full border border-gray-300">
+    <div className="p-4 space-y-3 lg:space-y-8">
+      <p className="font-bold text-xl xl:text-4xl">Your Opinion Matters</p>
+      <div className="bg-white space-y-3 p-4 rounded-2xl lg:h-80">
+        <table className="rounded-2xl lg:w-full lg:h-60 lg:mt-5">
           <thead>
             <tr className="text-md">
               <th className="bg-[#C6E4D6] py-5">Questions</th>
               <th className="bg-[#C6E4D6] py-5">Select Your Opinion</th>
             </tr>
           </thead>
-          <tbody className="">
+          <tbody className="flex-col w-full items-center">
             {opinion.map((item) => (
-              <tr key={item.id} className="text-center">
-                <td className="font-bold text-sm">{item.title}</td>
-                <td className="text-center">
+              <tr key={item.id} className="">
+                <td className="border border-gray-300">{item.title}</td>
+                <td className="border border-gray-300 text-center">
                   <DropDown />
                 </td>
               </tr>

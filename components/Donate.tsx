@@ -18,19 +18,19 @@ export default function Donate() {
     },
   ];
   return (
-    <div className="space-y-3 self-center">
-      <p className="font-bold text-xl">Donate Today</p>
-      <p className="text-sm">
+    <div className="p-4 space-y-3 lg:space-y-8">
+      <p className="font-bold text-xl lg:text-4xl text-center">Donate Today</p>
+      <p className="text-sm text-center">
         Bangladesh 2.0 aims to redefine the nation&apos;s trajectory by
         embracing cutting-edge technology, promoting inclusive growth, and
         ensuring sustainability. With initiatives in renewable energy, digital
         transformation, and robust infrastructure.
       </p>
-      <div className="flex flex-col gap-5 rounded-2xl xl:flex-row">
+      <div className="flex flex-row gap-1 rounded-2xl xl:flex-row xl:gap-9 justify-center">
         {money.map((item) => {
           return (
-            <div key={item.amount} className={`${item.color} p-4 rounded-xl`}>
-              <p className="font-bold text-2xl">{item.amount} Taka</p>
+            <div key={item.amount} className={`${item.color} p-4 rounded-xl xl:px-20 xl:py-10`}>
+              <p className="font-bold text-2xl text-center">{item.amount} Taka</p>
             </div>
           );
         })}
@@ -39,10 +39,10 @@ export default function Donate() {
         <input
           type="number"
           placeholder="Other Amount (Taka)"
-          className="bg-white w-full px-4 py-3 text-sm outline-none "
+          className="bg-white w-full px-4 py-3 text-sm outline-none text-center"
         />
       </div>
-      <div className="px-23">
+      <div className="flex justify-center">
         <button className="bg-[#006A50] text-white px-10 py-3 text-sm rounded-xl">
           Done Now
         </button>

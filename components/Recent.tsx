@@ -30,8 +30,8 @@ export default function Recent() {
     },
   ];
   return (
-    <div className="p-4 space-y-3 ">
-      <p className="font-bold text-xl">Recent News</p>
+    <div className="p-4 space-y-3 lg:space-y-8">
+      <p className="font-bold text-xl lg:text-4xl">Recent News</p>
       <p className="text-sm">
         Bangladesh 2.0 aims to redefine the nation&apos;s trajectory by
         embracing cutting-edge technology, promoting inclusive growth, and
@@ -45,22 +45,24 @@ export default function Recent() {
             return (
               <div
                 key={item.id}
-                className="bg-white rounded-2xl px-3 py-10 space-y-4 space-x-2"
+                className="bg-white flex flex-col gap-4 rounded-2xl p-5 lg:flex-row lg:p-9"
               >
-                <Image
+                <div>
+                  <Image
                   src={item.image}
                   width="400"
                   height="200"
                   alt="Bangladesh"
-                  className="rounded-2xl"
+                  className="rounded-2xl lg:w-180 lg:h-65"
                 />
+                </div>
                 <div className="space-y-3">
                   <p className="font-bold text-xl">{item.title}</p>
                   <Image
                     src={item.source}
                     width="150"
                     height="150"
-                    alt="Bangladesh"
+                    alt="Al"
                     className="rounded-2xl"
                   />
                   <div className="flex space-x-7">
@@ -69,6 +71,11 @@ export default function Recent() {
                   </div>
                   <div>
                     <p>{entryTitle}</p>
+                  </div>
+                  <div>
+                    <button className="bg-[#006A50] text-white p-4 text-sm rounded-xl font-bold lg:px-5 lg:py-3">
+                        Read More
+                    </button>
                   </div>
                 </div>
               </div>

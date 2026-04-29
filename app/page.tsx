@@ -1,5 +1,4 @@
 import Donate from "@/components/Donate";
-import Footer from "@/components/Footer";
 import Hero1 from "@/components/Hero1";
 import Opinion from "@/components/Opinion";
 import Pillars from "@/components/Pillars";
@@ -9,7 +8,7 @@ import Vision from "@/components/Vision";
 
 export default function page() {
   return (
-    <div className="w-full max-w-7xl mx-auto space-y-12 border">
+    <div className="w-full max-w-7xl mx-auto space-y-12">
       <Hero1 />
       <Pillars />
       <Vision />
@@ -17,7 +16,6 @@ export default function page() {
       <Recent />
       <Donate />
       <Subscribe />
-      <Footer />
     </div>
   );
 }
