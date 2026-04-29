@@ -41,8 +41,8 @@ export default function Vision() {
             className={`rounded-2xl p-10 ${item.color} space-y-2`}
           >
             <Image src="/bulb.svg" width={70} height={50} alt="Bulb" />
-            <p className="font-bold text-background">{item.title}</p>
-            <p className="text-background">{item.entry}</p>
+            <p className="font-bold text-black">{item.title}</p>
+            <p className="text-black">{item.entry}</p>
             <button
               className={`${item.btnColor} text-white  p-4 text-sm rounded-xl`}
             >
