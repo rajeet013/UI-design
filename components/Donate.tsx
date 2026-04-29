@@ -26,7 +26,7 @@ export default function Donate() {
         ensuring sustainability. With initiatives in renewable energy, digital
         transformation, and robust infrastructure.
       </p>
-      <div className="flex flex-row gap-1 rounded-2xl xl:flex-row xl:gap-9 justify-center">
+      <div className="flex flex-row gap-2 rounded-2xl xl:flex-row xl:gap-9 justify-center">
         {money.map((item) => {
           return (
             <div key={item.amount} className={`${item.color} p-4 rounded-xl xl:px-20 xl:py-10`}>
