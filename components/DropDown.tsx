@@ -14,7 +14,7 @@ const dropdown = [
 export default function Example() {
   return (
     <Menu as="div" className="relative inline-block">
-      <MenuButton className="bg-[#C6E4D6] flex p-1 text-sm font-semibold whitespace-nowrap border">
+      <MenuButton className="bg-[#C6E4D6] dark:bg-green-600 flex p-1 text-sm font-semibold whitespace-nowrap border text-foreground">
         Yes, I Agree
         <ChevronDownIcon className="size-5 text-foreground" />
       </MenuButton>

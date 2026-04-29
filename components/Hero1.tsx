@@ -15,8 +15,8 @@ export default function Hero1() {
         </div>
         <Image
           src="/Image.png"
-          width="400"
-          height="400"
+          width={400}
+          height={400}
           alt="Bangladesh"
           className=""
         />

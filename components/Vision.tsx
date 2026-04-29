@@ -40,18 +40,18 @@ export default function Vision() {
             key={item.title}
             className={`rounded-2xl p-10 ${item.color} space-y-2`}
           >
-            <Image src="/bulb.svg" width="70" height="50" alt="Bulb" />
-            <p className="font-bold">{item.title}</p>
-            <p>{item.entry}</p>
+            <Image src="/bulb.svg" width={70} height={50} alt="Bulb" />
+            <p className="font-bold text-background">{item.title}</p>
+            <p className="text-background">{item.entry}</p>
             <button
-              className={`${item.btnColor} text-white p-4 text-sm rounded-xl`}
+              className={`${item.btnColor} text-white  p-4 text-sm rounded-xl`}
             >
               Learn More
             </button>
           </div>
         ))}
       </div>
-      <div className="bg-white rounded-xl p-4 space-y-2">
+      <div className="bg-white dark:bg-zinc-800 rounded-xl p-4 space-y-2">
         <p>
           &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Facilis quas, ducimus labore sequi quos deserunt optio id repellendus

@@ -2,19 +2,19 @@ export default function Donate() {
   const money = [
     {
       amount: 100,
-      color: "bg-white",
+      color: "bg-white dark:bg-zinc-800",
     },
     {
       amount: 200,
-      color: "bg-[#C6E4D6]",
+      color: "bg-[#C6E4D6] dark:bg-green-600",
     },
     {
       amount: 500,
-      color: "bg-white",
+      color: "bg-white dark:bg-zinc-800",
     },
     {
       amount: 1000,
-      color: "bg-white",
+      color: "bg-white dark:bg-zinc-800",
     },
   ];
   return (

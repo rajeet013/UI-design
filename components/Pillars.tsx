@@ -23,9 +23,9 @@ export default function Pillars() {
       <p className="font-bold text-xl xl:text-4xl">Pillars of &quot;Bangladesh 2.0&quot;</p>
       <div className="flex flex-col gap-4 md:flex md:flex-row">
         {pillars.map((item) => (
-          <div key={item.title} className="bg-white rounded-2xl p-7">
-            <Image src="/bulb.svg" width="70" height="50" alt="Bulb" />
-            <p className="font-bold">{item.title}</p>
+          <div key={item.title} className="bg-white dark:bg-zinc-800 rounded-2xl p-7">
+            <Image src="/bulb.svg" width={70} height={50} alt="Bulb" />
+            <p className="font-bold text-foreground">{item.title}</p>
             <p>{entryTitle}</p>
           </div>
         ))}

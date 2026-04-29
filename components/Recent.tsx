@@ -46,7 +46,7 @@ export default function Recent() {
               return (
               <div
                 key={item.id}
-                className="bg-white flex flex-col gap-4 rounded-2xl p-5 lg:flex-row lg:p-9"
+                className="bg-white dark:bg-zinc-800 flex flex-col gap-4 rounded-2xl p-5 lg:flex-row lg:p-9"
               >
                 <div>
                   <Image
@@ -86,7 +86,7 @@ export default function Recent() {
               return (
                 <div
                 key={item.id}
-                className="bg-white flex flex-col gap-4 rounded-2xl p-5 lg:flex-row lg:p-9"
+                className="bg-white dark:bg-zinc-800 flex flex-col gap-4 rounded-2xl p-5 lg:flex-row lg:p-9"
               >
                 <div className="space-y-3">
                   <p className="font-bold text-xl">{item.title}</p>
@@ -113,8 +113,8 @@ export default function Recent() {
                 <div>
                   <Image
                   src={item.image}
-                  width="400"
-                  height="200"
+                  width={400}
+                  height={200}
                   alt="Bangladesh"
                   className="rounded-2xl lg:w-180 lg:h-65"
                 />

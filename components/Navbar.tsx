@@ -2,7 +2,7 @@ import ThemeSwitch from "./ThemeSwitch";
 
 export default function Navbar() {
   return (
-    <div className="bg-white">
+    <div className="bg-white dark:bg-zinc-800">
       <div className=" flex flex-row items-center justify-between p-5 w-full max-w-7xl mx-auto">
         <p className="font-bold text-xl md:text-3xl">Bangladesh 2.0</p>
         <div className="flex flex-row items-center space-x-4">
