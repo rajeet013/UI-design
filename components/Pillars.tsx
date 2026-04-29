@@ -19,11 +19,11 @@ export default function Pillars() {
     },
   ];
   return (
-    <div className="p-4 space-y-3">
+    <div className="p-4 space-y-3 ">
       <p className="font-bold text-xl">Pillars of &quot;Bangladesh 2.0&quot;</p>
-      <div className="space-y-6">
+      <div className="flex flex-col gap-4 md:flex md:flex-row">
         {pillars.map((item) => (
-          <div key={item.title} className="bg-white rounded-2xl p-10">
+          <div key={item.title} className="bg-white rounded-2xl p-7">
             <Image src="/bulb.svg" width="70" height="50" alt="Bulb" />
             <p className="font-bold">{item.title}</p>
             <p>{entryTitle}</p>

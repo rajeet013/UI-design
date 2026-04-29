@@ -14,24 +14,21 @@ const dropdown = [
 export default function Example() {
   return (
     <Menu as="div" className="relative inline-block">
-      <MenuButton className="bg-[#C6E4D6] flex justify-center rounded-md px-3 py-1 text-sm font-semibold whitespace-nowrap">
+      <MenuButton className="bg-[#C6E4D6] flex p-1 text-sm font-semibold whitespace-nowrap">
         Yes, I Agree
-        <ChevronDownIcon
-          aria-hidden="true"
-          className="size-5 text-foreground"
-        />
+        <ChevronDownIcon className="size-5 text-foreground" />
       </MenuButton>
 
       <MenuItems
         transition
-        className="absolute right-0 z-10 mt-2 w-35 rounded-md bg-background"
+        className="absolute right-0 z-10 mt-2 w-35 bg-backgroun"
       >
         <div className="py-1">
           {dropdown.map((item) => (
             <MenuItem key={item.title}>
               <Link
                 href="#"
-                className="block px-4 py-1 text-sm text-foreground hover:bg-[#C6E4D6]"
+                className="block p-3 text-sm text-foreground hover:bg-[#C6E4D6]"
               >
                 {item.title}
               </Link>

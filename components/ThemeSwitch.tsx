@@ -9,9 +9,9 @@ export default function ThemeSwitch() {
   const { setTheme, resolvedTheme } = useTheme();
 
   const mounted = useSyncExternalStore(
-    () => () => {}, // no store to subscribe to
-    () => true, // client → mounted
-    () => false, // server → not mounted
+    () => () => {},
+    () => true,
+    () => false,
   );
 
   if (!mounted)

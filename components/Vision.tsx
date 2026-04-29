@@ -25,7 +25,7 @@ export default function Vision() {
     },
   ];
   return (
-    <div className="p-4 space-y-3">
+    <div className="p-4 space-y-3 ">
       <p className="font-bold text-xl">The Vision of Future</p>
       <p className="text-sm">
         Bangladesh 2.0 aims to redefine the nation’s trajectory by embracing
@@ -34,11 +34,11 @@ export default function Vision() {
         transformation, and robust infrastructure, the country is set to become
         a global model of development.
       </p>
-      <div className="space-y-6">
+      <div className="flex flex-col gap-3 md:flex-row">
         {vision.map((item) => (
           <div
             key={item.title}
-            className={`rounded-2xl p-10 ${item.color} space-y-2`}
+            className={`rounded-2xl p-8 ${item.color} space-y-2`}
           >
             <Image src="/bulb.svg" width="70" height="50" alt="Bulb" />
             <p className="font-bold">{item.title}</p>
