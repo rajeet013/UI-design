@@ -42,7 +42,8 @@ export default function Recent() {
       <div>
         <div className="flex flex-col gap-4 rounded-2xl">
           {satellite.map((item) => {
-            return (
+            if (item.id%2 !== 0) {
+              return (
               <div
                 key={item.id}
                 className="bg-white flex flex-col gap-4 rounded-2xl p-5 lg:flex-row lg:p-9"
@@ -79,7 +80,48 @@ export default function Recent() {
                   </div>
                 </div>
               </div>
-            );
+              )
+            }
+            else {
+              return (
+                <div
+                key={item.id}
+                className="bg-white flex flex-col gap-4 rounded-2xl p-5 lg:flex-row lg:p-9"
+              >
+                <div className="space-y-3">
+                  <p className="font-bold text-xl">{item.title}</p>
+                  <Image
+                    src={item.source}
+                    width="150"
+                    height="150"
+                    alt="Al"
+                    className="rounded-2xl"
+                  />
+                  <div className="flex space-x-7">
+                    <p>Date: {item.date}</p>
+                    <p>Time: {item.time}</p>
+                  </div>
+                  <div>
+                    <p>{entryTitle}</p>
+                  </div>
+                  <div>
+                    <button className="bg-[#006A50] text-white p-4 text-sm rounded-xl font-bold lg:px-5 lg:py-3">
+                        Read More
+                    </button>
+                  </div>
+                </div>
+                <div>
+                  <Image
+                  src={item.image}
+                  width="400"
+                  height="200"
+                  alt="Bangladesh"
+                  className="rounded-2xl lg:w-180 lg:h-65"
+                />
+                </div>
+              </div>
+              )
+            }
           })}
         </div>
       </div>
