@@ -44,7 +44,7 @@ export default function Donate() {
       </div>
       <div className="flex justify-center">
         <button className="bg-[#006A50] text-white px-10 py-3 text-sm rounded-xl">
-          Done Now
+          Donate Now
         </button>
       </div>
     </div>
