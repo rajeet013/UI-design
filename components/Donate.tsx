@@ -29,17 +29,22 @@ export default function Donate() {
       <div className="flex flex-row gap-2 rounded-2xl xl:flex-row xl:gap-9 justify-center">
         {money.map((item) => {
           return (
-            <div key={item.amount} className={`${item.color} p-4 rounded-xl xl:px-20 xl:py-10`}>
-              <p className="font-bold text-2xl text-center">{item.amount} Taka</p>
+            <div
+              key={item.amount}
+              className={`${item.color} p-4 rounded-xl xl:px-20 xl:py-10`}
+            >
+              <p className="font-bold text-2xl text-center">
+                {item.amount} Taka
+              </p>
             </div>
           );
         })}
       </div>
       <div className="px-10">
         <input
-          type="number"
+          type="text"
           placeholder="Other Amount (Taka)"
-          className="bg-white w-full px-4 py-3 text-sm outline-none text-center"
+          className="bg-white dark:bg-zinc-800 w-full px-4 py-3 text-sm outline-none text-center"
         />
       </div>
       <div className="flex justify-center">

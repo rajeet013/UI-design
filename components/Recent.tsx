@@ -50,8 +50,8 @@ export default function Recent() {
                 <div>
                   <Image
                     src={item.image}
-                    width="400"
-                    height="200"
+                    width={400}
+                    height={200}
                     alt="Bangladesh"
                     className="rounded-2xl lg:w-180 lg:h-65"
                   />
@@ -60,8 +60,8 @@ export default function Recent() {
                   <p className="font-bold text-xl">{item.title}</p>
                   <Image
                     src={item.source}
-                    width="150"
-                    height="150"
+                    width={150}
+                    height={150}
                     alt="Al"
                     className="rounded-2xl"
                   />
@@ -90,8 +90,8 @@ export default function Recent() {
                   <p className="font-bold text-xl">{item.title}</p>
                   <Image
                     src={item.source}
-                    width="150"
-                    height="150"
+                    width={150}
+                    height={150}
                     alt="Al"
                     className="rounded-2xl"
                   />
