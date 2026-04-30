@@ -39,23 +39,22 @@ export default function Recent() {
         transformation, and robust infrastructure, the country is set to become
         a global model of development.
       </p>
-      <div>
-        <div className="flex flex-col gap-4 rounded-2xl">
-          {satellite.map((item) => {
-            if (item.id%2 !== 0) {
-              return (
+      <div className="flex flex-col gap-4 rounded-2xl">
+        {satellite.map((item) => {
+          if (item.id % 2 !== 0) {
+            return (
               <div
                 key={item.id}
                 className="bg-white dark:bg-zinc-800 flex flex-col gap-4 rounded-2xl p-5 lg:flex-row lg:p-9"
               >
                 <div>
                   <Image
-                  src={item.image}
-                  width="400"
-                  height="200"
-                  alt="Bangladesh"
-                  className="rounded-2xl lg:w-180 lg:h-65"
-                />
+                    src={item.image}
+                    width="400"
+                    height="200"
+                    alt="Bangladesh"
+                    className="rounded-2xl lg:w-180 lg:h-65"
+                  />
                 </div>
                 <div className="space-y-3">
                   <p className="font-bold text-xl">{item.title}</p>
@@ -75,16 +74,15 @@ export default function Recent() {
                   </div>
                   <div>
                     <button className="bg-[#006A50] text-white p-4 text-sm rounded-xl font-bold lg:px-5 lg:py-3">
-                        Read More
+                      Read More
                     </button>
                   </div>
                 </div>
               </div>
-              )
-            }
-            else {
-              return (
-                <div
+            );
+          } else {
+            return (
+              <div
                 key={item.id}
                 className="bg-white dark:bg-zinc-800 flex flex-col gap-4 rounded-2xl p-5 lg:flex-row lg:p-9"
               >
@@ -106,24 +104,23 @@ export default function Recent() {
                   </div>
                   <div>
                     <button className="bg-[#006A50] text-white p-4 text-sm rounded-xl font-bold lg:px-5 lg:py-3">
-                        Read More
+                      Read More
                     </button>
                   </div>
                 </div>
                 <div>
                   <Image
-                  src={item.image}
-                  width={400}
-                  height={200}
-                  alt="Bangladesh"
-                  className="rounded-2xl lg:w-180 lg:h-65"
-                />
+                    src={item.image}
+                    width={400}
+                    height={200}
+                    alt="Bangladesh"
+                    className="rounded-2xl lg:w-180 lg:h-65"
+                  />
                 </div>
               </div>
-              )
-            }
-          })}
-        </div>
+            );
+          }
+        })}
       </div>
     </div>
   );
